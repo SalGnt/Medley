@@ -8,6 +8,9 @@ Medley is an **open source music library** written in _Java_.
 
 Build/usage Instructions
 ------------------------
+[![Build Status](https://travis-ci.org/SalGnt/Medley.svg?branch=master)](https://travis-ci.org/SalGnt/Medley)
+[![Coverage Status](https://coveralls.io/repos/SalGnt/Medley/badge.png)](https://coveralls.io/r/SalGnt/Medley)
+
     TODO
 
 
