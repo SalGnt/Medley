@@ -1,0 +1,14 @@
+# Java
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+
+# Misc.
+docs/
+drafts/
