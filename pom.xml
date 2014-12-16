@@ -3,15 +3,12 @@
 
     <groupId>medley</groupId>
     <artifactId>Medley</artifactId>
-    <version>0.1-alpha</version>
+    <version>0.1.0-alpha</version>
     <packaging>jar</packaging>
 
     <name>Medley</name>
     <description>An Open Source Music Library.</description>
     <url>https://github.com/SalGnt/Medley</url>
-    <!-- <organization>
-        <name>Organization</name>
-    </organization> -->
 
     <issueManagement>
         <system>GitHub</system>
@@ -22,12 +19,11 @@
         <developer>
             <id>SalGnt</id>
             <name>Salvatore Gentile</name>
-            <email>salgnt@outlook.com</email>
+            <email>&#99;&#111;&#110;&#116;&#97;ct&#64;&#115;&#103;&#101;nt&#105;&#108;e.it</email>
             <roles>
                 <role>Project Manager</role>
                 <role>Developer</role>
             </roles>
-            <!-- <organization>Organization</organization> -->
             <timezone>+1</timezone>
         </developer>
     </developers>
@@ -38,12 +34,26 @@
         <url>https://github.com/SalGnt/Medley</url>
     </scm>
 
+    <ciManagement>
+        <system>Travis-CI</system>
+        <url>https://travis-ci.org/SalGnt/Medley</url>
+        <!-- <notifiers>
+            <notifier>
+                <type>mail</type>
+                <sendOnError>true</sendOnError>
+                <sendOnFailure>true</sendOnFailure>
+                <sendOnSuccess>false</sendOnSuccess>
+                <sendOnWarning>false</sendOnWarning>
+                <configuration><address>travis@127.0.0.1</address></configuration>
+            </notifier>
+        </notifiers> -->
+    </ciManagement>
+
     <licenses>
         <license>
             <name>The MIT License (MIT)</name>
             <url>https://raw.githubusercontent.com/SalGnt/Medley/master/LICENSE</url>
             <distribution>repo</distribution>
-            <!-- <comments>A business-friendly OSS license</comments> -->
         </license>
     </licenses>
 
@@ -86,24 +96,16 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
-                <!-- <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>#</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration> -->
             </plugin>
 
-            <!-- JavaFX
             <plugin>
-                <groupId>com.zenjava</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>2.0</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.1</version>
                 <configuration>
-                    <mainClass>#</mainClass>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
                 </configuration>
-            </plugin> -->
+            </plugin>
 
             <!-- Maven Site Plugin -->
             <plugin>
@@ -123,6 +125,9 @@
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-javadoc-plugin</artifactId>
                             <version>2.9.1</version>
+                            <configuration>
+                                <additionalparam>-header &apos;&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;&apos;</additionalparam>
+                            </configuration>
                         </plugin>
 
                         <!-- Maven JXR -->
@@ -162,7 +167,7 @@
                             <artifactId>maven-checkstyle-plugin</artifactId>
                             <version>2.12.1</version>
                             <configuration>
-                                <configLocation>${basedir}/src/main/resources/checks/checkstyle.xml</configLocation>
+                                <configLocation>${basedir}/src/checkstyle.xml</configLocation>
                             </configuration>
                         </plugin>
 
@@ -175,20 +180,6 @@
                                 <targetJdk>${compileSource}</targetJdk>
                             </configuration>
                         </plugin>
-
-                        <!-- JDepend
-                        <plugin>
-                            <groupId>org.codehaus.mojo</groupId>
-                            <artifactId>jdepend-maven-plugin</artifactId>
-                            <version>2.0</version>
-                        </plugin> -->
-
-                        <!-- FindBugs
-                        <plugin>
-                            <groupId>org.codehaus.mojo</groupId>
-                            <artifactId>findbugs-maven-plugin</artifactId>
-                            <version>2.5.4</version>
-                        </plugin> -->
 
                         <!-- Taglist -->
                         <plugin>
@@ -209,25 +200,17 @@
                 </dependencies>
             </plugin>
 
-            <!-- GitHub Pages
+            <!-- Maven Javadoc -->
             <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.9</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
                 <configuration>
-                    <message>Updated site via Maven</message>
+                    <additionalparam>-header &apos;&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;&apos;</additionalparam>
                 </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>site</goal>
-                        </goals>
-                        <phase>site</phase>
-                    </execution>
-                </executions>
-            </plugin> -->
+            </plugin>
 
-            <!-- JaCoCo - Java Code Coverage
+            <!-- JaCoCo - Java Code Coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -251,14 +234,14 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin> -->
+            </plugin>
 
-            <!-- Coveralls -->
+            <!-- Coveralls
             <plugin>
                 <groupId>org.eluder.coveralls</groupId>
                 <artifactId>coveralls-maven-plugin</artifactId>
                 <version>2.2.0</version>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 </project>

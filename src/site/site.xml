@@ -17,20 +17,21 @@
         <fluidoSkin>
             <!-- Social
             <twitter>
-                <user>SalvoGentile</user>
+                <user>_sgentile</user>
                 <showUser>true</showUser>
                 <showFollowers>true</showFollowers>
             </twitter>
             <facebookLike />
             <googlePlusOne /> -->
 
-            <gitHub>
-                <projectId>SalGtn/Medley</projectId>
+            <!-- <gitHub>
+                <projectId>SalGnt/Medley</projectId>
                 <ribbonOrientation>right</ribbonOrientation>
                 <ribbonColor>red</ribbonColor>
-            </gitHub>
+            </gitHub> -->
 
             <topBarEnabled>false</topBarEnabled>
+            <!-- <navBarStyle>navbar-inverse</navBarStyle> -->
             <sideBarEnabled>true</sideBarEnabled>
             <!-- <breadcrumbDivider>»</breadcrumbDivider> -->
 
@@ -46,7 +47,7 @@
         </head>
 
         <breadcrumbs>
-            <item name="Medley" href="/" />
+            <item name="${project.name}" href="/" />
         </breadcrumbs>
 
         <menu ref="parent"/>
