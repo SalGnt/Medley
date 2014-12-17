@@ -1,8 +1,8 @@
 package medley.tone;
 
 /**
- * {@code Name} class that represents musical notes accidental, that alter the
- * pitch of a note.
+ * {@code Accidental} class that represents musical notes accidental, that alter
+ * the pitch of a note.
  */
 public enum Accidental {
 
