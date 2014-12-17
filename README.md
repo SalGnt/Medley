@@ -10,7 +10,9 @@ With Medley you can manipulate musical entities to easily create apps that invol
 Build/usage Instructions
 ------------------------
 [![Build Status](http://img.shields.io/travis/SalGnt/Medley/master.svg?style=flat)](https://travis-ci.org/SalGnt/Medley)&nbsp;
-[![The MIT License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](#license)&nbsp;
+[![Javadoc](http://img.shields.io/badge/Medley-Site-0088CC.svg?style=flat)](salgnt.github.io/Medley)&nbsp;
+[![Javadoc](http://img.shields.io/badge/Medley-Javadoc-F8981D.svg?style=flat)](salgnt.github.io/Medley/apidocs)&nbsp;
+[![The MIT License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)](#License)&nbsp;
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/SalGnt/Medley?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 The project make use of Maven. If you are familiar with it and with its commands you're in.
@@ -20,12 +22,12 @@ Generates the JAR file that you will use in your application.
     
     mvn package
 
-### Javadoc
+### [Javadoc](salgnt.github.io/Medley/apidocs)
 Generates the Javadoc files for the project.
 
     mvn javadoc:javadoc
 
-### Site
+### [Site](salgnt.github.io/Medley)
 Generates the website and run it at [http://localhost:8080/](http://localhost:8080/).
 
     mvn site:run
