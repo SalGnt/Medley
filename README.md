@@ -10,8 +10,8 @@ With Medley you can manipulate musical entities to easily create apps that invol
 Build/usage Instructions
 ------------------------
 [![Build Status](http://img.shields.io/travis/SalGnt/Medley/master.svg?style=flat)](https://travis-ci.org/SalGnt/Medley)&nbsp;
-[![Javadoc](http://img.shields.io/badge/Medley-Site-0088CC.svg?style=flat)](salgnt.github.io/Medley)&nbsp;
-[![Javadoc](http://img.shields.io/badge/Medley-Javadoc-F8981D.svg?style=flat)](salgnt.github.io/Medley/apidocs)&nbsp;
+[![Javadoc](http://img.shields.io/badge/Medley-Site-0088CC.svg?style=flat)](http://salgnt.github.io/Medley)&nbsp;
+[![Javadoc](http://img.shields.io/badge/Medley-Javadoc-F8981D.svg?style=flat)](http://salgnt.github.io/Medley/apidocs)&nbsp;
 [![The MIT License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)](#license)&nbsp;
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/SalGnt/Medley?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
@@ -22,12 +22,12 @@ Generates the JAR file that you will use in your application.
     
     mvn package
 
-### [Javadoc](salgnt.github.io/Medley/apidocs)
+### [Javadoc](http://salgnt.github.io/Medley/apidocs)
 Generates the Javadoc files for the project.
 
     mvn javadoc:javadoc
 
-### [Site](salgnt.github.io/Medley)
+### [Site](http://salgnt.github.io/Medley)
 Generates the website and run it at [http://localhost:8080/](http://localhost:8080/).
 
     mvn site:run
