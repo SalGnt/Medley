@@ -12,7 +12,7 @@ Build/usage Instructions
 [![Build Status](http://img.shields.io/travis/SalGnt/Medley/master.svg?style=flat)](https://travis-ci.org/SalGnt/Medley)&nbsp;
 [![Javadoc](http://img.shields.io/badge/Medley-Site-0088CC.svg?style=flat)](salgnt.github.io/Medley)&nbsp;
 [![Javadoc](http://img.shields.io/badge/Medley-Javadoc-F8981D.svg?style=flat)](salgnt.github.io/Medley/apidocs)&nbsp;
-[![The MIT License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)](#License)&nbsp;
+[![The MIT License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)](#license)&nbsp;
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/SalGnt/Medley?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 The project make use of Maven. If you are familiar with it and with its commands you're in.
