@@ -23,16 +23,19 @@ Build/usage Instructions
 The project make use of Maven. If you are familiar with it and with its commands you're in.
 
 **JAR**
+
 Generates the JAR file that you will use in your application.
     
     mvn package
 
 [**Javadoc**](http://salgnt.github.io/Medley/apidocs)
+
 Generates the Javadoc files for the project.
 
     mvn javadoc:javadoc
 
 [**Site**](http://salgnt.github.io/Medley)
+
 Generates the website and run it at [http://localhost:8080/](http://localhost:8080/).
 
     mvn site:run
