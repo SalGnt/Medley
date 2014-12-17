@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Date-Revision-yyyymmdd" content="20141217" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>Medley Music Library - </title>
+    <title>Medley Music Library - Surefire Report</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.3.1.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -47,7 +47,7 @@
         Medley</a>
                     <span class="divider">/</span>
       </li>
-        <li class="active "></li>
+        <li class="active ">Surefire Report</li>
         
                 
                     
@@ -67,111 +67,76 @@
                     
                 <ul class="nav nav-list">
                               <li class="nav-header">Project Documentation</li>
-                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                        
       <li>
   
                           <a href="project-info.html" title="Project Information">
-          <i class="icon-chevron-down"></i>
+          <i class="icon-chevron-right"></i>
         Project Information</a>
+                  </li>
+                                                                                                                                                                                                          
+      <li>
+  
+                          <a href="project-reports.html" title="Project Reports">
+          <i class="icon-chevron-down"></i>
+        Project Reports</a>
                     <ul class="nav nav-list">
+                    
+      <li>
+  
+                          <a href="apidocs/index.html" title="JavaDocs">
+          <i class="none"></i>
+        JavaDocs</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="xref/index.html" title="Source Xref">
+          <i class="none"></i>
+        Source Xref</a>
+            </li>
                     
       <li class="active">
   
-            <a href="#"><i class="none"></i>About</a>
+            <a href="#"><i class="none"></i>Surefire Report</a>
           </li>
                     
       <li>
   
-                          <a href="plugin-management.html" title="Plugin Management">
+                          <a href="cobertura/index.html" title="Cobertura Test Coverage">
           <i class="none"></i>
-        Plugin Management</a>
+        Cobertura Test Coverage</a>
             </li>
                     
       <li>
   
-                          <a href="distribution-management.html" title="Distribution Management">
+                          <a href="checkstyle.html" title="Checkstyle">
           <i class="none"></i>
-        Distribution Management</a>
+        Checkstyle</a>
             </li>
                     
       <li>
   
-                          <a href="dependency-info.html" title="Dependency Information">
+                          <a href="pmd.html" title="PMD Report">
           <i class="none"></i>
-        Dependency Information</a>
+        PMD Report</a>
             </li>
                     
       <li>
   
-                          <a href="source-repository.html" title="Source Repository">
+                          <a href="cpd.html" title="CPD Report">
           <i class="none"></i>
-        Source Repository</a>
+        CPD Report</a>
             </li>
                     
       <li>
   
-                          <a href="mail-lists.html" title="Mailing Lists">
+                          <a href="taglist.html" title="Tag List">
           <i class="none"></i>
-        Mailing Lists</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="issue-tracking.html" title="Issue Tracking">
-          <i class="none"></i>
-        Issue Tracking</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="integration.html" title="Continuous Integration">
-          <i class="none"></i>
-        Continuous Integration</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="plugins.html" title="Project Plugins">
-          <i class="none"></i>
-        Project Plugins</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="license.html" title="Project License">
-          <i class="none"></i>
-        Project License</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="team-list.html" title="Project Team">
-          <i class="none"></i>
-        Project Team</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="project-summary.html" title="Project Summary">
-          <i class="none"></i>
-        Project Summary</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="dependencies.html" title="Dependencies">
-          <i class="none"></i>
-        Dependencies</a>
+        Tag List</a>
             </li>
               </ul>
         </li>
-                                                                                                                                                                                                
-      <li>
-  
-                          <a href="project-reports.html" title="Project Reports">
-          <i class="icon-chevron-right"></i>
-        Project Reports</a>
-                  </li>
             </ul>
                 
                     
@@ -193,16 +158,43 @@
                 
         <div id="bodyColumn"  class="span9" >
                                   
-            <h1>Medley Music Library</h1>
-
-<p>Medley is an <strong>open source music library</strong> written in <em>Java</em>.
-With Medley you can manipulate musical entities to easily create apps that involve music.</p>
-
-<h2>Support</h2>
-
-<p>If you are having issues, please let me know and provide feedbacks to <a href="https://twitter.com/_sgentile">@_sgentile</a>.
-Of course you can also use the project's <a href="https://github.com/SalGnt/Medley/issues">issue tracker</a>.</p>
-
+            <script type="text/javascript">
+//<![CDATA[
+function toggleDisplay(elementId) {
+ var elm = document.getElementById(elementId + 'error');
+ if (elm && typeof elm.style != "undefined") {
+ if (elm.style.display == "none") {
+ elm.style.display = "";
+ document.getElementById(elementId + 'off').style.display = "none";
+ document.getElementById(elementId + 'on').style.display = "inline";
+ } else if (elm.style.display == "") { elm.style.display = "none";
+ document.getElementById(elementId + 'off').style.display = "inline";
+ document.getElementById(elementId + 'on').style.display = "none";
+ } 
+ } 
+ }
+//]]>
+</script>
+<div class="section">
+<h2>Surefire Report<a name="Surefire_Report"></a></h2></div>
+<div class="section">
+<h2>Summary<a name="Summary"></a></h2><a name="Summary"></a><br />
+<table border="1" class="table table-striped">
+<tr class="a">
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th></tr>
+<tr class="b">
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+<td>0</td></tr></table><br />
+<p>Note: failures are anticipated and checked for with assertions while errors are unanticipated.</p><br /></div>
                   </div>
             </div>
           </div>

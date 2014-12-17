@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Date-Revision-yyyymmdd" content="20141217" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>Medley Music Library - </title>
+    <title>Medley Music Library - Dependency Information</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.3.1.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -47,7 +47,7 @@
         Medley</a>
                     <span class="divider">/</span>
       </li>
-        <li class="active "></li>
+        <li class="active ">Dependency Information</li>
         
                 
                     
@@ -75,10 +75,12 @@
         Project Information</a>
                     <ul class="nav nav-list">
                     
-      <li class="active">
+      <li>
   
-            <a href="#"><i class="none"></i>About</a>
-          </li>
+                          <a href="index.html" title="About">
+          <i class="none"></i>
+        About</a>
+            </li>
                     
       <li>
   
@@ -94,12 +96,10 @@
         Distribution Management</a>
             </li>
                     
-      <li>
+      <li class="active">
   
-                          <a href="dependency-info.html" title="Dependency Information">
-          <i class="none"></i>
-        Dependency Information</a>
-            </li>
+            <a href="#"><i class="none"></i>Dependency Information</a>
+          </li>
                     
       <li>
   
@@ -193,16 +193,44 @@
                 
         <div id="bodyColumn"  class="span9" >
                                   
-            <h1>Medley Music Library</h1>
-
-<p>Medley is an <strong>open source music library</strong> written in <em>Java</em>.
-With Medley you can manipulate musical entities to easily create apps that involve music.</p>
-
-<h2>Support</h2>
-
-<p>If you are having issues, please let me know and provide feedbacks to <a href="https://twitter.com/_sgentile">@_sgentile</a>.
-Of course you can also use the project's <a href="https://github.com/SalGnt/Medley/issues">issue tracker</a>.</p>
-
+            <div class="section">
+<h2>Dependency Information<a name="Dependency_Information"></a></h2><a name="Dependency_Information"></a>
+<div class="section">
+<h3>Apache Maven<a name="Apache_Maven"></a></h3><a name="Apache_Maven"></a>
+<div class="source">
+<pre>&lt;dependency&gt;
+  &lt;groupId&gt;medley&lt;/groupId&gt;
+  &lt;artifactId&gt;Medley&lt;/artifactId&gt;
+  &lt;version&gt;0.1.0-alpha&lt;/version&gt;
+&lt;/dependency&gt;</pre></div></div>
+<div class="section">
+<h3>Apache Buildr<a name="Apache_Buildr"></a></h3><a name="Apache_Buildr"></a>
+<div class="source">
+<pre>'medley:Medley:jar:0.1.0-alpha'</pre></div></div>
+<div class="section">
+<h3>Apache Ant<a name="Apache_Ant"></a></h3><a name="Apache_Ant"></a>
+<div class="source">
+<pre>&lt;dependency org=&quot;medley&quot; name=&quot;Medley&quot; rev=&quot;0.1.0-alpha&quot;&gt;
+  &lt;artifact name=&quot;Medley&quot; type=&quot;jar&quot; /&gt;
+&lt;/dependency&gt;</pre></div></div>
+<div class="section">
+<h3>Groovy Grape<a name="Groovy_Grape"></a></h3><a name="Groovy_Grape"></a>
+<div class="source">
+<pre>@Grapes(
+@Grab(group='medley', module='Medley', version='0.1.0-alpha')
+)</pre></div></div>
+<div class="section">
+<h3>Grails<a name="Grails"></a></h3><a name="Grails"></a>
+<div class="source">
+<pre>compile 'medley:Medley:0.1.0-alpha'</pre></div></div>
+<div class="section">
+<h3>Leiningen<a name="Leiningen"></a></h3><a name="Leiningen"></a>
+<div class="source">
+<pre>[medley/Medley &quot;0.1.0-alpha&quot;]</pre></div></div>
+<div class="section">
+<h3>SBT<a name="SBT"></a></h3><a name="SBT"></a>
+<div class="source">
+<pre>libraryDependencies += &quot;medley&quot; %% &quot;Medley&quot; % &quot;0.1.0-alpha&quot;</pre></div></div></div>
                   </div>
             </div>
           </div>
