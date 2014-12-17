@@ -7,6 +7,11 @@ Medley is an **open source music library** written in _Java_.
 With Medley you can manipulate musical entities to easily create apps that involve music.
 
 
+Changelog
+---------
+See [`CHANGELOG.md`](CHANGELOG.md).
+
+
 Build/usage Instructions
 ------------------------
 [![Build Status](http://img.shields.io/travis/SalGnt/Medley/master.svg?style=flat)](https://travis-ci.org/SalGnt/Medley)&nbsp;
@@ -17,17 +22,17 @@ Build/usage Instructions
 
 The project make use of Maven. If you are familiar with it and with its commands you're in.
 
-### JAR
+**JAR**
 Generates the JAR file that you will use in your application.
     
     mvn package
 
-### [Javadoc](http://salgnt.github.io/Medley/apidocs)
+[**Javadoc**](http://salgnt.github.io/Medley/apidocs)
 Generates the Javadoc files for the project.
 
     mvn javadoc:javadoc
 
-### [Site](http://salgnt.github.io/Medley)
+[**Site**](http://salgnt.github.io/Medley)
 Generates the website and run it at [http://localhost:8080/](http://localhost:8080/).
 
     mvn site:run
