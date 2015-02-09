@@ -25,7 +25,7 @@ The project make use of Maven. If you are familiar with it and with its commands
 **JAR**
 
 Generates the JAR file that you will use in your application.
-    
+
     mvn package
 
 [**Javadoc**](http://salgnt.github.io/Medley/apidocs)
