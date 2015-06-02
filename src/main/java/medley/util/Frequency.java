@@ -14,6 +14,11 @@ public final class Frequency {
     private static final double PIANO_MAX_FREQUENCY = 4186.01;
 
     /**
+     * Scientific pitch.
+     */
+    public static final double A432 = 432.00;
+
+    /**
      * French pitch.
      */
     public static final double A435 = 435.00;
@@ -47,7 +52,7 @@ public final class Frequency {
      * method.
      *
      * @param semitonesDistance a specified number of half steps between a
-     *                          {@code Note} and the A4 note.
+     *        {@code Note} and the A4 note.
      * @return the frequency of the note which is distant the specified number
      *         of semitones from the international standard pitch A440 pitch.
      * @see #getFrequency(int semitonesDistance, double pitch)
@@ -65,7 +70,7 @@ public final class Frequency {
      * where \( n \) is the distance in semitones, and \( p \) a pitch.
      *
      * @param semitonesDistance a specified number of half steps between a
-     *                          {@code Note} and the A4 note.
+     *        {@code Note} and the A4 note.
      * @param pitch a specified pitch.
      * @return the frequency of the note which is distant the specified number
      *         of semitones from the specified pitch.
